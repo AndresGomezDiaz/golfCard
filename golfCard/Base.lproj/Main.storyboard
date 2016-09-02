@@ -1,25 +1,466 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n28-V3-cjB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Jugador Lista-->
+        <scene sceneID="uK1-ZP-yTa">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController storyboardIdentifier="idJugadorLista" id="NoU-9R-rk2" customClass="jugadorLista" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="r6d-E9-abZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaJugadorLista" rowHeight="100" id="C26-YQ-XEq">
+                                <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C26-YQ-XEq" id="yJi-Nj-ogq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sin_foto.png" translatesAutoresizingMaskIntoConstraints="NO" id="17m-hI-is4">
+                                            <rect key="frame" x="20" y="25" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="0i7-5X-a0r"/>
+                                                <constraint firstAttribute="height" constant="50" id="dsm-d8-K1b"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del jugador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j17-s3-sog" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                            <rect key="frame" x="78" y="25" width="152" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Handicap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13y-cd-wv0" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                            <rect key="frame" x="78" y="54" width="73" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="j17-s3-sog" firstAttribute="leading" secondItem="17m-hI-is4" secondAttribute="trailing" constant="8" id="Mxn-hY-DsI"/>
+                                        <constraint firstItem="17m-hI-is4" firstAttribute="centerY" secondItem="yJi-Nj-ogq" secondAttribute="centerY" id="S74-NW-wGT"/>
+                                        <constraint firstItem="13y-cd-wv0" firstAttribute="leading" secondItem="17m-hI-is4" secondAttribute="trailing" constant="8" id="YcZ-R0-skc"/>
+                                        <constraint firstItem="17m-hI-is4" firstAttribute="leading" secondItem="yJi-Nj-ogq" secondAttribute="leading" constant="20" id="czq-wk-S2h"/>
+                                        <constraint firstItem="j17-s3-sog" firstAttribute="top" secondItem="17m-hI-is4" secondAttribute="top" id="n2w-Ys-i9v"/>
+                                        <constraint firstItem="13y-cd-wv0" firstAttribute="bottom" secondItem="17m-hI-is4" secondAttribute="bottom" id="tHK-4E-7u6"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="GJA-Xx-r0i" kind="show" id="RMK-li-jxv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NoU-9R-rk2" id="m6N-cX-Vdy"/>
+                            <outlet property="delegate" destination="NoU-9R-rk2" id="wrx-as-VJ5"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mit-n5-vVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="281"/>
+        </scene>
+        <!--Jugador Detalle-->
+        <scene sceneID="iQK-z9-v5d">
+            <objects>
+                <viewController storyboardIdentifier="idJugadorDetalle" id="GJA-Xx-r0i" customClass="jugadorDetalle" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zsu-Eb-2g1"/>
+                        <viewControllerLayoutGuide type="bottom" id="tWn-PQ-E6C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="znV-KF-72e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sin_foto.png" translatesAutoresizingMaskIntoConstraints="NO" id="nEo-Ti-Ze0">
+                                <rect key="frame" x="250" y="28" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="m1R-GV-tSM"/>
+                                    <constraint firstAttribute="height" constant="100" id="sWv-tA-Q3J"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Jugador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kx2-2O-o0D" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                <rect key="frame" x="222" y="158" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Handicap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV9-Vz-0AJ" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                <rect key="frame" x="264" y="187" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVO-Ch-zwW">
+                                <rect key="frame" x="540" y="183" width="40" height="30"/>
+                                <state key="normal" title="Editar"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Kb-zG-vFx">
+                                <rect key="frame" x="0.0" y="253" width="600" height="347"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimos juegos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olc-dz-uwm" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                <rect key="frame" x="20" y="224" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YVO-Ch-zwW" secondAttribute="trailing" constant="20" id="0sa-i2-LVQ"/>
+                            <constraint firstItem="tWn-PQ-E6C" firstAttribute="top" secondItem="1Kb-zG-vFx" secondAttribute="bottom" id="4Dq-HW-ssw"/>
+                            <constraint firstItem="olc-dz-uwm" firstAttribute="leading" secondItem="znV-KF-72e" secondAttribute="leading" constant="20" id="6vc-T0-Lpw"/>
+                            <constraint firstItem="1Kb-zG-vFx" firstAttribute="top" secondItem="olc-dz-uwm" secondAttribute="bottom" constant="8" id="FEo-Vr-x76"/>
+                            <constraint firstAttribute="trailing" secondItem="1Kb-zG-vFx" secondAttribute="trailing" id="Ifm-Qd-ytf"/>
+                            <constraint firstItem="1Kb-zG-vFx" firstAttribute="top" secondItem="YVO-Ch-zwW" secondAttribute="bottom" constant="40" id="JUi-gI-6RD"/>
+                            <constraint firstItem="nEo-Ti-Ze0" firstAttribute="centerX" secondItem="znV-KF-72e" secondAttribute="centerX" id="LHQ-ba-jD3"/>
+                            <constraint firstItem="Kx2-2O-o0D" firstAttribute="centerX" secondItem="nEo-Ti-Ze0" secondAttribute="centerX" id="Pro-xX-5P2"/>
+                            <constraint firstItem="YVO-Ch-zwW" firstAttribute="centerY" secondItem="rV9-Vz-0AJ" secondAttribute="centerY" id="Q4H-zE-Bhm"/>
+                            <constraint firstItem="rV9-Vz-0AJ" firstAttribute="centerX" secondItem="Kx2-2O-o0D" secondAttribute="centerX" id="Wbh-mc-vc7"/>
+                            <constraint firstItem="rV9-Vz-0AJ" firstAttribute="top" secondItem="Kx2-2O-o0D" secondAttribute="bottom" constant="8" id="bs5-YP-5xQ"/>
+                            <constraint firstItem="nEo-Ti-Ze0" firstAttribute="top" secondItem="zsu-Eb-2g1" secondAttribute="bottom" constant="8" id="dQc-Th-FBb"/>
+                            <constraint firstItem="1Kb-zG-vFx" firstAttribute="leading" secondItem="znV-KF-72e" secondAttribute="leading" id="fMr-K9-O45"/>
+                            <constraint firstItem="Kx2-2O-o0D" firstAttribute="top" secondItem="nEo-Ti-Ze0" secondAttribute="bottom" constant="30" id="hrs-Pe-UQT"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51a-JL-dpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3422" y="281"/>
+        </scene>
+        <!--Jugador Proceso-->
+        <scene sceneID="HLa-6b-Xcl">
+            <objects>
+                <viewController storyboardIdentifier="idJugadorProceso" id="PON-CT-zRZ" customClass="jugadorProceso" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3qp-Yv-nXR"/>
+                        <viewControllerLayoutGuide type="bottom" id="yLn-rZ-h9z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qI5-j1-Smo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sin_foto.png" translatesAutoresizingMaskIntoConstraints="NO" id="tZd-nT-HTl">
+                                <rect key="frame" x="250" y="28" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mGE-Zi-ZyB"/>
+                                    <constraint firstAttribute="width" constant="100" id="zCv-BD-vVe"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nick" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mbd-1g-iQv">
+                                <rect key="frame" x="20" y="158" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-nJ-2mw">
+                                <rect key="frame" x="20" y="208" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Handicap" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cA-ON-5v9">
+                                <rect key="frame" x="20" y="356" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w6F-Hl-4xu">
+                                <rect key="frame" x="237" y="308" width="127" height="29"/>
+                                <segments>
+                                    <segment title="Hombre"/>
+                                    <segment title="Mujer"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYz-b8-mbS">
+                                <rect key="frame" x="20" y="258" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Salida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ac5-IV-tRZ">
+                                <rect key="frame" x="20" y="406" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94n-Vr-6rh">
+                                <rect key="frame" x="20" y="456" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEl-Iw-1GK" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                <rect key="frame" x="187" y="311" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QYz-b8-mbS" firstAttribute="top" secondItem="XVN-nJ-2mw" secondAttribute="bottom" constant="20" id="1ah-PZ-WKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Mbd-1g-iQv" secondAttribute="trailing" constant="20" id="1at-Qa-eby"/>
+                            <constraint firstAttribute="trailing" secondItem="QYz-b8-mbS" secondAttribute="trailing" constant="20" id="1x7-Iz-OQg"/>
+                            <constraint firstItem="ac5-IV-tRZ" firstAttribute="top" secondItem="1cA-ON-5v9" secondAttribute="bottom" constant="20" id="2gO-xe-tXK"/>
+                            <constraint firstItem="w6F-Hl-4xu" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="DRd-88-Wtv"/>
+                            <constraint firstAttribute="trailing" secondItem="1cA-ON-5v9" secondAttribute="trailing" constant="20" id="G3E-XJ-lu9"/>
+                            <constraint firstItem="QYz-b8-mbS" firstAttribute="leading" secondItem="qI5-j1-Smo" secondAttribute="leading" constant="20" id="Ge2-VP-N95"/>
+                            <constraint firstItem="ac5-IV-tRZ" firstAttribute="leading" secondItem="qI5-j1-Smo" secondAttribute="leading" constant="20" id="HFc-Rr-wuT"/>
+                            <constraint firstItem="94n-Vr-6rh" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="Klr-qT-T2v"/>
+                            <constraint firstItem="w6F-Hl-4xu" firstAttribute="leading" secondItem="qEl-Iw-1GK" secondAttribute="trailing" constant="8" id="PjY-HO-p3T"/>
+                            <constraint firstItem="1cA-ON-5v9" firstAttribute="leading" secondItem="qI5-j1-Smo" secondAttribute="leading" constant="20" id="R9A-eX-kZx"/>
+                            <constraint firstItem="Mbd-1g-iQv" firstAttribute="top" secondItem="tZd-nT-HTl" secondAttribute="bottom" constant="30" id="RPY-mi-Wiz"/>
+                            <constraint firstItem="QYz-b8-mbS" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="SfZ-hC-E81"/>
+                            <constraint firstAttribute="trailing" secondItem="ac5-IV-tRZ" secondAttribute="trailing" constant="20" id="UGv-Cl-Bc7"/>
+                            <constraint firstItem="ac5-IV-tRZ" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="YaN-8a-SDc"/>
+                            <constraint firstItem="tZd-nT-HTl" firstAttribute="top" secondItem="3qp-Yv-nXR" secondAttribute="bottom" constant="8" id="Zyh-B4-K0x"/>
+                            <constraint firstItem="1cA-ON-5v9" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="cfA-KB-qBk"/>
+                            <constraint firstItem="XVN-nJ-2mw" firstAttribute="top" secondItem="Mbd-1g-iQv" secondAttribute="bottom" constant="20" id="gd2-Em-lJJ"/>
+                            <constraint firstAttribute="trailing" secondItem="XVN-nJ-2mw" secondAttribute="trailing" constant="20" id="hbT-Ag-AO8"/>
+                            <constraint firstItem="94n-Vr-6rh" firstAttribute="leading" secondItem="qI5-j1-Smo" secondAttribute="leading" constant="20" id="lGS-B2-vMd"/>
+                            <constraint firstItem="w6F-Hl-4xu" firstAttribute="top" secondItem="QYz-b8-mbS" secondAttribute="bottom" constant="20" id="lPi-30-Wxx"/>
+                            <constraint firstAttribute="trailing" secondItem="94n-Vr-6rh" secondAttribute="trailing" constant="20" id="lUi-me-Uf7"/>
+                            <constraint firstItem="tZd-nT-HTl" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="loH-Sx-m70"/>
+                            <constraint firstItem="1cA-ON-5v9" firstAttribute="top" secondItem="w6F-Hl-4xu" secondAttribute="bottom" constant="20" id="rqE-CL-E4W"/>
+                            <constraint firstItem="qEl-Iw-1GK" firstAttribute="centerY" secondItem="w6F-Hl-4xu" secondAttribute="centerY" id="sTk-0j-UbA"/>
+                            <constraint firstItem="XVN-nJ-2mw" firstAttribute="leading" secondItem="qI5-j1-Smo" secondAttribute="leading" constant="20" id="sb8-mI-t5h"/>
+                            <constraint firstItem="Mbd-1g-iQv" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="xXi-If-rv6"/>
+                            <constraint firstItem="94n-Vr-6rh" firstAttribute="top" secondItem="ac5-IV-tRZ" secondAttribute="bottom" constant="20" id="xxb-gA-TyK"/>
+                            <constraint firstItem="Mbd-1g-iQv" firstAttribute="leading" secondItem="qI5-j1-Smo" secondAttribute="leading" constant="20" id="yBQ-Kp-Bbe"/>
+                            <constraint firstItem="XVN-nJ-2mw" firstAttribute="centerX" secondItem="qI5-j1-Smo" secondAttribute="centerX" id="zg0-km-IWP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWf-Gd-NbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4111" y="281"/>
+        </scene>
+        <!--Configuracion-->
+        <scene sceneID="h5u-pi-fDg">
+            <objects>
+                <viewController storyboardIdentifier="idConfiguracion" id="emN-wU-2sm" customClass="configuracion" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8SB-4I-JsS"/>
+                        <viewControllerLayoutGuide type="bottom" id="knQ-uN-ohB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ca-UT-aWv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Mostrar distancia en:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfC-Rz-Ds0" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="437" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Ajuste de Handicap:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnF-Yy-QGW" customClass="estiloLabelGris15" customModule="golfCard" customModuleProvider="target">
+                                <rect key="frame" x="20" y="90" width="503" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ta6-is-LKc">
+                                <rect key="frame" x="465" y="36" width="115" height="29"/>
+                                <segments>
+                                    <segment title="Yardas"/>
+                                    <segment title="Metros"/>
+                                </segments>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-QF-3rJ">
+                                <rect key="frame" x="531" y="84" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9v0-QF-3rJ" firstAttribute="centerY" secondItem="BnF-Yy-QGW" secondAttribute="centerY" id="LZn-Cf-Mco"/>
+                            <constraint firstAttribute="trailing" secondItem="9v0-QF-3rJ" secondAttribute="trailing" constant="20" id="MaW-HN-24Z"/>
+                            <constraint firstItem="Ta6-is-LKc" firstAttribute="leading" secondItem="CfC-Rz-Ds0" secondAttribute="trailing" constant="8" id="SOD-ag-BE3"/>
+                            <constraint firstItem="9v0-QF-3rJ" firstAttribute="leading" secondItem="BnF-Yy-QGW" secondAttribute="trailing" constant="8" id="WJe-TV-xaS"/>
+                            <constraint firstItem="Ta6-is-LKc" firstAttribute="centerY" secondItem="CfC-Rz-Ds0" secondAttribute="centerY" id="ZdM-YN-WWO"/>
+                            <constraint firstItem="BnF-Yy-QGW" firstAttribute="leading" secondItem="2Ca-UT-aWv" secondAttribute="leading" constant="20" id="edX-UI-h1J"/>
+                            <constraint firstItem="CfC-Rz-Ds0" firstAttribute="top" secondItem="8SB-4I-JsS" secondAttribute="bottom" constant="20" id="rcY-eF-RhH"/>
+                            <constraint firstAttribute="trailing" secondItem="Ta6-is-LKc" secondAttribute="trailing" constant="20" id="vk8-k8-uB2"/>
+                            <constraint firstItem="BnF-Yy-QGW" firstAttribute="top" secondItem="CfC-Rz-Ds0" secondAttribute="bottom" constant="30" id="xfe-la-Q7z"/>
+                            <constraint firstItem="CfC-Rz-Ds0" firstAttribute="leading" secondItem="2Ca-UT-aWv" secondAttribute="leading" constant="20" id="zYq-uA-b1l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joq-YL-kPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="-470"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="dC7-DC-bek">
+            <objects>
+                <viewController storyboardIdentifier="idInicio" id="jQd-Pf-NG0" customClass="inicio" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SaV-e9-p3d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lqm-sX-kPB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8lw-AC-Hi3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-LV-SpE">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iFJ-5h-Z9z">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="536"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EO-Tq-NTn">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="268"/>
+                                                <state key="normal" title="Jugadores"/>
+                                                <connections>
+                                                    <action selector="actionJugadores:" destination="jQd-Pf-NG0" eventType="touchUpInside" id="xv2-gH-V3D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4O-Wu-CBA">
+                                                <rect key="frame" x="0.0" y="268" width="300" height="268"/>
+                                                <state key="normal" title="Campos"/>
+                                                <connections>
+                                                    <action selector="actionCampos:" destination="jQd-Pf-NG0" eventType="touchUpInside" id="RwQ-xN-0aa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fbB-4Z-bJN">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="536"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqr-vd-cmo">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="268"/>
+                                                <state key="normal" title="Iniciar Juego"/>
+                                                <connections>
+                                                    <action selector="actionIniciaJuego:" destination="jQd-Pf-NG0" eventType="touchUpInside" id="GKs-18-rya"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqL-VC-V3b">
+                                                <rect key="frame" x="0.0" y="268" width="300" height="268"/>
+                                                <state key="normal" title="Juegos"/>
+                                                <connections>
+                                                    <action selector="actionJuegos:" destination="jQd-Pf-NG0" eventType="touchUpInside" id="79f-pN-gG2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="P5J-LV-SpE" secondAttribute="trailing" id="2iL-Tm-eyI"/>
+                            <constraint firstItem="P5J-LV-SpE" firstAttribute="top" secondItem="SaV-e9-p3d" secondAttribute="bottom" id="6GL-9j-uWK"/>
+                            <constraint firstItem="P5J-LV-SpE" firstAttribute="leading" secondItem="8lw-AC-Hi3" secondAttribute="leading" id="CAm-Gq-iTG"/>
+                            <constraint firstItem="P5J-LV-SpE" firstAttribute="bottom" secondItem="Lqm-sX-kPB" secondAttribute="top" id="iXC-K7-o8k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wys-tJ-caL">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="4oS-PS-rPx">
+                            <connections>
+                                <action selector="actionConfiguracion:" destination="jQd-Pf-NG0" id="Co8-bx-uGT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WV1-z9-82y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="281"/>
+        </scene>
+        <!--Campo Lista-->
+        <scene sceneID="unl-WY-jIa">
+            <objects>
+                <tableViewController storyboardIdentifier="idCampoLista" id="9VQ-K4-0cu" customClass="campoLista" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8RS-PV-upc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaCampoLista" id="Q79-5k-Di6">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q79-5k-Di6" id="a9u-Ii-9Hg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9VQ-K4-0cu" id="vow-mi-GGM"/>
+                            <outlet property="delegate" destination="9VQ-K4-0cu" id="BnS-zM-eIG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1T-XZ-c8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="1075"/>
+        </scene>
+        <!--Juego Lista-->
+        <scene sceneID="Pzb-dD-rPa">
+            <objects>
+                <tableViewController storyboardIdentifier="idJuegoLista" id="gTO-1F-q9C" customClass="juegoLista" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bg7-3n-crs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCeldaJuegoLista" id="C7w-4u-kZz">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C7w-4u-kZz" id="8gG-cz-wuO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gTO-1F-q9C" id="isL-ps-MnA"/>
+                            <outlet property="delegate" destination="gTO-1F-q9C" id="JEZ-zF-OaO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvi-66-URz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2745" y="1776"/>
+        </scene>
+        <!--Inicia Juego-->
+        <scene sceneID="2qD-uL-zWH">
+            <objects>
+                <viewController storyboardIdentifier="idIniciaJuego" id="hvu-3e-M54" customClass="iniciaJuego" customModule="golfCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FOT-oE-Rlc"/>
+                        <viewControllerLayoutGuide type="bottom" id="guR-tk-gtn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uxl-kV-HYk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IqG-Ws-Z9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2745" y="2489"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tl6-i6-onM">
+            <objects>
+                <navigationController storyboardIdentifier="idNavigationInicio" automaticallyAdjustsScrollViewInsets="NO" id="n28-V3-cjB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4gl-YD-aKg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jQd-Pf-NG0" kind="relationship" relationship="rootViewController" id="lMN-2J-NhI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iol-we-BmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119" y="281"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_sin_foto.png" width="300" height="300"/>
+        <image name="settings" width="36" height="36"/>
+    </resources>
 </document>

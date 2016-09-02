@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		5892D1F61D78858F006A89A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D1F51D78858F006A89A0 /* AppDelegate.swift */; };
-		5892D1F81D78858F006A89A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D1F71D78858F006A89A0 /* ViewController.swift */; };
 		5892D1FB1D78858F006A89A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5892D1F91D78858F006A89A0 /* Main.storyboard */; };
 		5892D1FD1D78858F006A89A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5892D1FC1D78858F006A89A0 /* Assets.xcassets */; };
 		5892D2001D78858F006A89A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5892D1FE1D78858F006A89A0 /* LaunchScreen.storyboard */; };
+		5892D2081D7885B8006A89A0 /* inicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D2071D7885B8006A89A0 /* inicio.swift */; };
+		5892D20A1D788733006A89A0 /* jugadorLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D2091D788733006A89A0 /* jugadorLista.swift */; };
+		5892D20C1D788FD6006A89A0 /* campoLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D20B1D788FD6006A89A0 /* campoLista.swift */; };
+		5892D20E1D78907D006A89A0 /* configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D20D1D78907D006A89A0 /* configuracion.swift */; };
+		5892D2121D7893E9006A89A0 /* iniciaJuego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D2111D7893E9006A89A0 /* iniciaJuego.swift */; };
+		5892D2141D789648006A89A0 /* juegoLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D2131D789648006A89A0 /* juegoLista.swift */; };
+		58A63FA81D79DE14001DF3E5 /* ic_sin_foto.png in Resources */ = {isa = PBXBuildFile; fileRef = 58A63FA71D79DE14001DF3E5 /* ic_sin_foto.png */; };
+		58B80E6C1D79EB2F003E8E40 /* jugadorProceso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B80E6B1D79EB2F003E8E40 /* jugadorProceso.swift */; };
+		58B80E6E1D79EC4A003E8E40 /* jugadorDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B80E6D1D79EC4A003E8E40 /* jugadorDetalle.swift */; };
+		58B80E761D79FA5C003E8E40 /* estiloLabelGris15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B80E751D79FA5C003E8E40 /* estiloLabelGris15.swift */; };
+		58B80E781D79FF19003E8E40 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58B80E721D79F9CD003E8E40 /* Ubuntu-Light.ttf */; };
+		58B80E791D79FF19003E8E40 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58B80E731D79F9CD003E8E40 /* Ubuntu-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5892D1F21D78858F006A89A0 /* golfCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = golfCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5892D1F51D78858F006A89A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5892D1F71D78858F006A89A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5892D1FA1D78858F006A89A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5892D1FC1D78858F006A89A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5892D1FF1D78858F006A89A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5892D2011D78858F006A89A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5892D2071D7885B8006A89A0 /* inicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inicio.swift; sourceTree = "<group>"; };
+		5892D2091D788733006A89A0 /* jugadorLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jugadorLista.swift; sourceTree = "<group>"; };
+		5892D20B1D788FD6006A89A0 /* campoLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = campoLista.swift; sourceTree = "<group>"; };
+		5892D20D1D78907D006A89A0 /* configuracion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = configuracion.swift; sourceTree = "<group>"; };
+		5892D2111D7893E9006A89A0 /* iniciaJuego.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iniciaJuego.swift; sourceTree = "<group>"; };
+		5892D2131D789648006A89A0 /* juegoLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = juegoLista.swift; path = ../juegoLista.swift; sourceTree = "<group>"; };
+		58A63FA71D79DE14001DF3E5 /* ic_sin_foto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_sin_foto.png; sourceTree = "<group>"; };
+		58B80E6B1D79EB2F003E8E40 /* jugadorProceso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jugadorProceso.swift; sourceTree = "<group>"; };
+		58B80E6D1D79EC4A003E8E40 /* jugadorDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jugadorDetalle.swift; sourceTree = "<group>"; };
+		58B80E721D79F9CD003E8E40 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		58B80E731D79F9CD003E8E40 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		58B80E751D79FA5C003E8E40 /* estiloLabelGris15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = estiloLabelGris15.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +77,56 @@
 			isa = PBXGroup;
 			children = (
 				5892D1F51D78858F006A89A0 /* AppDelegate.swift */,
-				5892D1F71D78858F006A89A0 /* ViewController.swift */,
+				58B80E741D79FA26003E8E40 /* estilo */,
+				58A63FA91D79DE5A001DF3E5 /* jugador */,
 				5892D1F91D78858F006A89A0 /* Main.storyboard */,
+				5892D2131D789648006A89A0 /* juegoLista.swift */,
+				5892D2071D7885B8006A89A0 /* inicio.swift */,
+				5892D2111D7893E9006A89A0 /* iniciaJuego.swift */,
+				5892D20D1D78907D006A89A0 /* configuracion.swift */,
+				5892D20B1D788FD6006A89A0 /* campoLista.swift */,
 				5892D1FC1D78858F006A89A0 /* Assets.xcassets */,
+				58A63FA41D79C781001DF3E5 /* img */,
+				58B80E711D79F9C1003E8E40 /* font */,
 				5892D1FE1D78858F006A89A0 /* LaunchScreen.storyboard */,
 				5892D2011D78858F006A89A0 /* Info.plist */,
 			);
 			path = golfCard;
+			sourceTree = "<group>";
+		};
+		58A63FA41D79C781001DF3E5 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				58A63FA71D79DE14001DF3E5 /* ic_sin_foto.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		58A63FA91D79DE5A001DF3E5 /* jugador */ = {
+			isa = PBXGroup;
+			children = (
+				5892D2091D788733006A89A0 /* jugadorLista.swift */,
+				58B80E6D1D79EC4A003E8E40 /* jugadorDetalle.swift */,
+				58B80E6B1D79EB2F003E8E40 /* jugadorProceso.swift */,
+			);
+			name = jugador;
+			sourceTree = "<group>";
+		};
+		58B80E711D79F9C1003E8E40 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				58B80E721D79F9CD003E8E40 /* Ubuntu-Light.ttf */,
+				58B80E731D79F9CD003E8E40 /* Ubuntu-Medium.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		58B80E741D79FA26003E8E40 /* estilo */ = {
+			isa = PBXGroup;
+			children = (
+				58B80E751D79FA5C003E8E40 /* estiloLabelGris15.swift */,
+			);
+			name = estilo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B80E781D79FF19003E8E40 /* Ubuntu-Light.ttf in Resources */,
+				58B80E791D79FF19003E8E40 /* Ubuntu-Medium.ttf in Resources */,
 				5892D2001D78858F006A89A0 /* LaunchScreen.storyboard in Resources */,
 				5892D1FD1D78858F006A89A0 /* Assets.xcassets in Resources */,
+				58A63FA81D79DE14001DF3E5 /* ic_sin_foto.png in Resources */,
 				5892D1FB1D78858F006A89A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5892D1F81D78858F006A89A0 /* ViewController.swift in Sources */,
+				5892D2141D789648006A89A0 /* juegoLista.swift in Sources */,
+				5892D20E1D78907D006A89A0 /* configuracion.swift in Sources */,
+				5892D20C1D788FD6006A89A0 /* campoLista.swift in Sources */,
+				5892D2121D7893E9006A89A0 /* iniciaJuego.swift in Sources */,
+				58B80E761D79FA5C003E8E40 /* estiloLabelGris15.swift in Sources */,
+				58B80E6E1D79EC4A003E8E40 /* jugadorDetalle.swift in Sources */,
 				5892D1F61D78858F006A89A0 /* AppDelegate.swift in Sources */,
+				5892D20A1D788733006A89A0 /* jugadorLista.swift in Sources */,
+				58B80E6C1D79EB2F003E8E40 /* jugadorProceso.swift in Sources */,
+				5892D2081D7885B8006A89A0 /* inicio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +362,7 @@
 				5892D2061D78858F006A89A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
