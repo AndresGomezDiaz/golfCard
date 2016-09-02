@@ -16,7 +16,7 @@
 		5892D20C1D788FD6006A89A0 /* campoLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D20B1D788FD6006A89A0 /* campoLista.swift */; };
 		5892D20E1D78907D006A89A0 /* configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D20D1D78907D006A89A0 /* configuracion.swift */; };
 		5892D2121D7893E9006A89A0 /* iniciaJuego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D2111D7893E9006A89A0 /* iniciaJuego.swift */; };
-		5892D2141D789648006A89A0 /* juegoLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892D2131D789648006A89A0 /* juegoLista.swift */; };
+		58A0FE6D1D7A2B960060E96A /* juegoLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A0FE6C1D7A2B960060E96A /* juegoLista.swift */; };
 		58A63FA81D79DE14001DF3E5 /* ic_sin_foto.png in Resources */ = {isa = PBXBuildFile; fileRef = 58A63FA71D79DE14001DF3E5 /* ic_sin_foto.png */; };
 		58B80E6C1D79EB2F003E8E40 /* jugadorProceso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B80E6B1D79EB2F003E8E40 /* jugadorProceso.swift */; };
 		58B80E6E1D79EC4A003E8E40 /* jugadorDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B80E6D1D79EC4A003E8E40 /* jugadorDetalle.swift */; };
@@ -37,7 +37,7 @@
 		5892D20B1D788FD6006A89A0 /* campoLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = campoLista.swift; sourceTree = "<group>"; };
 		5892D20D1D78907D006A89A0 /* configuracion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = configuracion.swift; sourceTree = "<group>"; };
 		5892D2111D7893E9006A89A0 /* iniciaJuego.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iniciaJuego.swift; sourceTree = "<group>"; };
-		5892D2131D789648006A89A0 /* juegoLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = juegoLista.swift; path = ../juegoLista.swift; sourceTree = "<group>"; };
+		58A0FE6C1D7A2B960060E96A /* juegoLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = juegoLista.swift; sourceTree = "<group>"; };
 		58A63FA71D79DE14001DF3E5 /* ic_sin_foto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_sin_foto.png; sourceTree = "<group>"; };
 		58B80E6B1D79EB2F003E8E40 /* jugadorProceso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jugadorProceso.swift; sourceTree = "<group>"; };
 		58B80E6D1D79EC4A003E8E40 /* jugadorDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jugadorDetalle.swift; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 				58B80E741D79FA26003E8E40 /* estilo */,
 				58A63FA91D79DE5A001DF3E5 /* jugador */,
 				5892D1F91D78858F006A89A0 /* Main.storyboard */,
-				5892D2131D789648006A89A0 /* juegoLista.swift */,
 				5892D2071D7885B8006A89A0 /* inicio.swift */,
+				58A0FE6C1D7A2B960060E96A /* juegoLista.swift */,
 				5892D2111D7893E9006A89A0 /* iniciaJuego.swift */,
 				5892D20D1D78907D006A89A0 /* configuracion.swift */,
 				5892D20B1D788FD6006A89A0 /* campoLista.swift */,
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5892D2141D789648006A89A0 /* juegoLista.swift in Sources */,
+				58A0FE6D1D7A2B960060E96A /* juegoLista.swift in Sources */,
 				5892D20E1D78907D006A89A0 /* configuracion.swift in Sources */,
 				5892D20C1D788FD6006A89A0 /* campoLista.swift in Sources */,
 				5892D2121D7893E9006A89A0 /* iniciaJuego.swift in Sources */,
